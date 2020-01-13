@@ -29,4 +29,14 @@ var person = {
     surname: prompt("Enter a surname"),
     married: confirm('married or not?')
 };
+
+// Добавьте персоне гаджеты, используя новые поля smartphone и laptop в объекте персоны
+// Добавьте владельца в гаджеты, используя новое поле owner в объектах телефона и ноутбука.
+//     обратите внимание на цикличность ссылок в объектах, если вы все сделали правильно, то
+
+// person.smartphone.owner.laptop.owner.smartphone == person.smartphone
+
+person.smartphone = {'owner': person};
+person.laptop = {'owner': person};
+
 console.log(person);
