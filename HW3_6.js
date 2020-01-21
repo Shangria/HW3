@@ -1,8 +1,8 @@
 // array fill nopush
-// Создайте пустой массив и добавляйте в него элементы, пока пользователь не нажмет Отмена в очередном prompt
 // Сделайте предыдущее задание, не используя push, а обращаясь к элементам по индексу.
 
 var arr = [];
+debugger;
 var input = prompt('введите что-нибудь');
 while (input != undefined) {
     var nextIndex=arr.length;
