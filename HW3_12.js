@@ -14,16 +14,11 @@
 var symbol1 = '#';
 var symbol2 = '.';
 var string = '';
-debugger;
 for (var j = 0; j < 10; j++) {
-    for (var i = 0; i < 11; i++) {
-        if (string.length % 2 == 0 && string.length < 11) {
-            string += symbol2;
-        }
-        if (string.length % 2 !== 0 && string.length < 11) {
-            string += symbol1;
-        }
+    for (var i = 1; i < 12; i++) {
+        string += i % 2 === j % 2 ? symbol1 : symbol2
     }
     string += '\n';
 }
 console.log(string);
+
